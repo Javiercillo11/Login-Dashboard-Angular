@@ -1,0 +1,94 @@
+<div mad-dialog-title>
+    <h1>Añadir Proveedor</h1>
+</div>
+
+<form [formGroup]="empForm" (ngSubmit)="onFormSubmit()">
+    <div mat-dialog-content class="content">
+        <div class="row">
+            <div class="col-md-6">
+                <mat-form-field appearance="outline">
+                    <mat-label>Razon Social</mat-label>
+                    <input matInput type="text" placeholder="Razon Social" formControlName="RazonSocial">
+                </mat-form-field>
+
+                <mat-form-field appearance="outline">
+                    <mat-label>Persona Contacto</mat-label>
+                    <input matInput type="text" placeholder="Persona Contacto" formControlName="PersonaContacto">
+                </mat-form-field>
+
+                <mat-form-field appearance="outline">
+                    <mat-label>Direccion</mat-label>
+                    <input matInput type="text" placeholder="Direccion" formControlName="Direccion">
+                </mat-form-field>
+
+                <mat-form-field appearance="outline">
+                    <mat-label>Provincia</mat-label>
+                    <input matInput type="text" placeholder="Provincia" formControlName="Provincia">
+                </mat-form-field>
+
+                <mat-form-field appearance="outline">
+                    <mat-label>Codigo Postal</mat-label>
+                    <input matInput type="text" placeholder="Codigo Postal" formControlName="CodigoPostal">
+                </mat-form-field>
+
+                <mat-form-field appearance="outline">
+                    <mat-label>Telefono</mat-label>
+                    <input matInput type="text" placeholder="Telefono" formControlName="Telefono">
+                </mat-form-field>
+
+                <mat-form-field appearance="outline">
+                    <mat-label>Movil</mat-label>
+                    <input matInput type="text" placeholder="Movil" formControlName="Movil">
+                </mat-form-field>
+
+                <mat-form-field appearance="outline">
+                    <mat-label>Descuento</mat-label>
+                    <input matInput type="text" placeholder="Descuento" formControlName="Descuento">
+                </mat-form-field>
+            </div>
+
+            <div class="col-md-6">
+                <mat-form-field appearance="outline">
+                    <mat-label>Recargo</mat-label>
+                    <input matInput type="text" placeholder="Recargo" formControlName="Recargo">
+                </mat-form-field>
+
+                <mat-form-field appearance="outline">
+                    <mat-label>Observaciones</mat-label>
+                    <input matInput type="text" placeholder="Observaciones" formControlName="Observaciones">
+                </mat-form-field>
+
+                <mat-form-field appearance="outline" >
+                    <input class="form-control" type="file" name="image" formControlName="Foto"/>
+                    <input matInput type="text">
+                </mat-form-field>
+
+                <mat-form-field appearance="outline">
+                    <mat-label>Correo</mat-label>
+                    <input matInput type="text" placeholder="Correo" formControlName="Correo">
+                </mat-form-field>
+
+                <mat-form-field appearance="outline">
+                    <mat-label>Login</mat-label>
+                    <input matInput type="text" placeholder="Login" formControlName="Login">
+                </mat-form-field>
+
+                <mat-form-field appearance="outline">
+                    <mat-label>Password</mat-label>
+                    <input matInput type="text" placeholder="Password" formControlName="Password">
+                </mat-form-field>
+
+                <mat-form-field appearance="outline">
+                    <mat-label>Pagina Web</mat-label>
+                    <input matInput type="text" placeholder="PagWeb" formControlName="PagWeb">
+                </mat-form-field>
+            </div>
+        </div>
+
+    </div>
+
+    <div mat-dialog-actions class="action">
+        <button mat-raised-button type="button" [mat-dialog-close]="false">Cancelar</button>
+        <button mat-raised-button color="primary" type="submit">{{data ? 'Update': 'Guardar'}}</button>
+    </div>
+</form>

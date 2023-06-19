@@ -1,0 +1,127 @@
+<div mad-dialog-title>
+    <h1>Añadir Articulo</h1>
+  </div>
+  
+  <form [formGroup]="empForm" (ngSubmit)="onFormSubmit()">
+    <div mat-dialog-content class="content">
+      <div class="row">
+        <div class="col-md-6">
+          <mat-form-field appearance="outline">
+            <mat-label>Numero</mat-label>
+            <input matInput type="text" placeholder="Numero" formControlName="Numero">
+          </mat-form-field>
+          <mat-form-field appearance="outline">
+            <mat-label>Fecha</mat-label>
+            <input matInput type="text" placeholder="Fecha" formControlName="Fecha">
+          </mat-form-field>
+          <mat-form-field appearance="outline">
+            <mat-label>Proveedor</mat-label>
+            <input matInput type="text" placeholder="Proveedor" formControlName="Proveedor">
+          </mat-form-field>
+          <mat-form-field appearance="outline">
+            <mat-label>Cif</mat-label>
+            <input matInput type="text" placeholder="Cif" formControlName="Cif">
+          </mat-form-field>
+          <mat-form-field appearance="outline">
+            <mat-label>Base 1</mat-label>
+            <input matInput type="text" placeholder="Base1" formControlName="Base1">
+          </mat-form-field>
+          <mat-form-field appearance="outline">
+            <mat-label>Iva 1</mat-label>
+            <input matInput type="text" placeholder="Iva1" formControlName="Iva1">
+          </mat-form-field>
+          <mat-form-field appearance="outline">
+            <mat-label>Re 1</mat-label>
+            <input matInput type="text" placeholder="Re1" formControlName="Re1">
+          </mat-form-field>
+          <mat-form-field appearance="outline">
+            <mat-label>Base 2</mat-label>
+            <input matInput type="text" placeholder="Base2" formControlName="Base2">
+          </mat-form-field>
+          <mat-form-field appearance="outline">
+            <mat-label>Iva 2</mat-label>
+            <input matInput type="text" placeholder="Iva2" formControlName="Iva2">
+          </mat-form-field>
+          <mat-form-field appearance="outline">
+            <mat-label>Re 2</mat-label>
+            <input matInput type="text" placeholder="Re2" formControlName="Re2">
+          </mat-form-field>
+          <mat-form-field appearance="outline">
+            <mat-label>Base 3</mat-label>
+            <input matInput type="text" placeholder="Base3" formControlName="Base3">
+          </mat-form-field>
+          <mat-form-field appearance="outline">
+            <mat-label>Iva 3</mat-label>
+            <input matInput type="text" placeholder="Iva3" formControlName="Iva3">
+          </mat-form-field>
+          <mat-form-field appearance="outline">
+            <mat-label>Re 3</mat-label>
+            <input matInput type="text" placeholder="Re3" formControlName="Re3">
+          </mat-form-field>
+        </div>
+        <div class="col-md-6">
+          <mat-form-field appearance="outline">
+            <mat-label>Base 4</mat-label>
+            <input matInput type="text" placeholder="Base4" formControlName="Base4">
+          </mat-form-field>
+          <mat-form-field appearance="outline">
+            <mat-label>Iva 4</mat-label>
+            <input matInput type="text" placeholder="Iva4" formControlName="Iva4">
+          </mat-form-field>
+          <mat-form-field appearance="outline">
+            <mat-label>Re 4</mat-label>
+            <input matInput type="text" placeholder="Re4" formControlName="Re4">
+          </mat-form-field>
+          <mat-form-field appearance="outline">
+            <mat-label>Base 5</mat-label>
+            <input matInput type="text" placeholder="Base5" formControlName="Base5">
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+            <mat-label>Iva 5</mat-label>
+            <input matInput type="text" placeholder="Iva1" formControlName="Iva5">
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+            <mat-label>Re 5</mat-label>
+            <input matInput type="text" placeholder="Re5" formControlName="Re5">
+        </mat-form-field>
+          <mat-form-field appearance="outline">
+            <mat-label>Base Total</mat-label>
+            <input matInput type="text" placeholder="BaseTotal" formControlName="BaseTotal">
+          </mat-form-field>
+          <mat-form-field appearance="outline">
+            <mat-label>Iva Total</mat-label>
+            <input matInput type="text" placeholder="IvaTotal" formControlName="IvaTotal">
+          </mat-form-field>
+          <mat-form-field appearance="outline">
+            <mat-label>Req Total</mat-label>
+            <input matInput type="text" placeholder="ReqTotal" formControlName="ReqTotal">
+          </mat-form-field>
+          <mat-form-field appearance="outline">
+            <mat-label>Total Factura</mat-label>
+            <input matInput type="text" placeholder="TotalFactura" formControlName="TotalFactura">
+          </mat-form-field>
+          <mat-form-field appearance="outline">
+            <mat-label>Nº Factura</mat-label>
+            <input matInput type="text" placeholder="NºFactura" formControlName="NºFactura">
+          </mat-form-field>
+          <mat-form-field appearance="outline">
+            <mat-label>Apartado</mat-label>
+            <input matInput type="text" placeholder="Apartado" formControlName="Apartado">
+          </mat-form-field>
+          <mat-form-field appearance="outline">
+            <mat-label>Deducible</mat-label>
+            <input matInput type="text" placeholder="Deducible" formControlName="Deducible">
+          </mat-form-field>
+          <mat-form-field appearance="outline">
+            <mat-label>Pagado</mat-label>
+            <input matInput type="text" placeholder="Pagado" formControlName="Pagado">
+          </mat-form-field>
+        </div>
+      </div>
+    </div>
+  
+    <div mat-dialog-actions class="action">
+      <button mat-raised-button type="button" [mat-dialog-close]="false">Cancelar</button>
+      <button mat-raised-button color="primary" type="submit">{{data ? 'Update': 'Guardar'}}</button>
+    </div>
+  </form>

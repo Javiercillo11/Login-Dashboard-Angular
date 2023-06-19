@@ -1,0 +1,79 @@
+<div mad-dialog-title>
+    <h1>Añadir Articulo</h1>
+  </div>
+  
+  <form [formGroup]="empForm" (ngSubmit)="onFormSubmit()">
+    <div mat-dialog-content class="content">
+        <div class="row">
+            <div class="col-md-6">
+                <mat-form-field appearance="outline">
+                    <mat-label>Codigo</mat-label>
+                    <input matInput type="text" placeholder="Codigo" formControlName="Codigo">
+                </mat-form-field>
+                <mat-form-field appearance="outline">
+                    <mat-label>Concepto</mat-label>
+                    <input matInput type="text" placeholder="Concepto" formControlName="Concepto">
+                </mat-form-field>
+                <mat-form-field appearance="outline">
+                    <mat-label>Familia</mat-label>
+                    <input matInput type="text" placeholder="Familia" formControlName="Familia">
+                </mat-form-field>
+                <mat-form-field appearance="outline">
+                    <mat-label>Proveedor</mat-label>
+                    <input matInput type="text" placeholder="Proveedor" formControlName="Proveedor">
+                </mat-form-field>
+                <mat-form-field appearance="outline">
+                    <mat-label>PrecioBase</mat-label>
+                    <input matInput type="text" placeholder="Precio Base" formControlName="PrecioBase">
+                </mat-form-field>
+                <mat-form-field appearance="outline">
+                    <mat-label>Tarifa 1</mat-label>
+                    <input matInput type="text" placeholder="Tarifa 1" formControlName="Tarifa1">
+                </mat-form-field>
+                <mat-form-field appearance="outline">
+                    <mat-label>Tarifa 2</mat-label>
+                    <input matInput type="text" placeholder="Tarifa2" formControlName="Tarifa2">
+                </mat-form-field>
+                <mat-form-field appearance="outline">
+                    <mat-label>Tarifa 3</mat-label>
+                    <input matInput type="text" placeholder="Tarifa3" formControlName="Tarifa3">
+                </mat-form-field>
+            </div>
+            <div class="col-md-6">
+                <mat-form-field appearance="outline">
+                    <mat-label>Tarifa 4</mat-label>
+                    <input matInput type="text" placeholder="Tarifa4" formControlName="Tarifa4">
+                </mat-form-field>
+                <mat-form-field appearance="outline">
+                    <mat-label>Nº Decimales</mat-label>
+                    <input matInput type="text" placeholder="Nºdecimales" formControlName="Nºdecimales">
+                </mat-form-field>
+                <mat-form-field appearance="outline">
+                    <mat-label>Foto</mat-label>
+                    <input matInput type="text" placeholder="Foto" formControlName="Foto">
+                </mat-form-field>
+                <mat-form-field appearance="outline">
+                    <mat-label>Iva</mat-label>
+                    <input matInput type="text" placeholder="Iva" formControlName="Iva">
+                </mat-form-field>
+                <mat-form-field appearance="outline">
+                    <mat-label>Stock</mat-label>
+                    <input matInput type="text" placeholder="Stock" formControlName="Stock">
+                </mat-form-field>
+                <mat-form-field appearance="outline">
+                    <mat-label>Minimo</mat-label>
+                    <input matInput type="text" placeholder="Minimo" formControlName="Minimo">
+                </mat-form-field>
+                <mat-form-field appearance="outline">
+                    <mat-label>Observaciones</mat-label>
+                    <input matInput type="text" placeholder="Observaciones" formControlName="Observaciones">
+                </mat-form-field>
+            </div>
+        </div>
+    </div>
+  
+    <div mat-dialog-actions class="action">
+        <button mat-raised-button type="button" [mat-dialog-close]="false">Cancelar</button>
+        <button mat-raised-button color="primary" type="submit">{{data ? 'Update': 'Guardar'}}</button>
+    </div>
+  </form>
